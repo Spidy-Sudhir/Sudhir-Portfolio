@@ -145,18 +145,3 @@ document.querySelectorAll('.copy-btn').forEach(btn => {
     });
   });
 });
-  });
-}, { threshold: 0.15 });
-revealEls.forEach(el => observer.observe(el));
-
-/* ===================== COPY TO CLIPBOARD ===================== */
-document.querySelectorAll('.copy-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const val = btn.getAttribute('data-copy');
-    navigator.clipboard.writeText(val).then(() => {
-      const original = btn.textContent;
-      btn.textContent = 'copied!';
-      setTimeout(() => { btn.textContent = original; }, 1500);
-    });
-  });
-});
