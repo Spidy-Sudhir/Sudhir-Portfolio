@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudhir Kumar Gupta — Full-Stack Developer &amp; Competitive Programmer</title>
+  <meta name="description"
+    content="Portfolio of Sudhir Kumar Gupta — B.Tech CSE student at HBTU Kanpur, full-stack developer and competitive programmer.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="thread-dot" id="threadDot"></div>
+  <div class="thread-progress" id="threadProgress"></div>
+
+  <header>
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">SKG</span>
+        Sudhir<span style="color:var(--text-muted)">.dev</span>
+      </a>
+      <nav>
+        <ul id="navList">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">
+          <span class="dot"></span>
+          <span id="themeLabel">Midnight</span>
+        </button>
+        <a href="assets/resume/Sudhir_Kumar_Gupta_Resume.pdf" download
+          class="btn btn-primary btn-sm resume-hide">Resume</a>
+        <button class="hamburger" id="hamburger"
+          aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> OPEN TO INTERNSHIPS &amp; SDE ROLES</div>
+        <h1>Hi, I'm <span class="accent">Sudhir Kumar Gupta</span> —<br>I build things, then optimize them.</h1>
+        <div class="role-line">&gt; <span id="roleText"></span><span class="cursor-blink">|</span></div>
+        <p class="lede">B.Tech CSE undergrad at Harcourt Butler Technical University, Kanpur. I build responsive web
+          apps and spend my spare cycles on data structures, algorithms, and clean UI.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/resume/Sudhir_Kumar_Gupta_Resume.pdf" download class="btn btn-ghost">Download Resume</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/Spidy-Sudhir" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.71 1.25 3.37.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.09 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/spidy-sudhir" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45Z" />
+            </svg>
+          </a>
+          <a href="https://leetcode.com/u/Spidy_/" target="_blank" rel="noopener" aria-label="LeetCode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.48 23.4c-.72.73-1.7 1.1-2.7 1.1-.98 0-1.94-.35-2.68-1.06l-4.15-3.98a4 4 0 0 1-1.2-2.87c0-1.1.42-2.13 1.2-2.88l4.15-3.98a3.9 3.9 0 0 1 2.68-1.06c1 0 1.98.37 2.7 1.1a3.9 3.9 0 0 1 0 5.5l-.02.02 1.98 1.9c.98-.94 2.28-1.46 3.66-1.46 2.98 0 5.4 2.44 5.4 5.43 0 1.5-.6 2.87-1.58 3.85-.98.98-2.34 1.58-3.82 1.58-1.4 0-2.7-.52-3.68-1.47l-1.94 1.86Zm-1.4-13.53L7.9 13.98c-.24.23-.37.55-.37.9 0 .35.13.66.37.9l4.16 4.1a1.5 1.5 0 0 0 1.08.44c.4 0 .78-.16 1.08-.44a1.55 1.55 0 0 0 0-2.22l-2.97-2.94a.7.7 0 0 1 0-1l2.97-2.86a1.55 1.55 0 0 0 0-2.22 1.55 1.55 0 0 0-2.16-.03Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-card">
+          <img src="assets/images/avatar.png" alt="Sudhir Kumar Gupta" class="avatar-img">
+        </div>
+        <div class="float-chip chip-1"><span class="chip-dot"></span>1k+ Problem Solved</div>
+        <div class="float-chip chip-2"><span class="chip-dot"></span>LeetCode 1707</div>
+        <div class="float-chip chip-3"><span class="chip-dot"></span>CodeChef 3★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-tag">01 / About</div>
+      <h2 class="section-title reveal">A bit about how I got here <span>&amp; where I'm headed.</span></h2>
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <img src="assets/images/about-profile.jpg" alt="Sudhir Kumar Gupta" class="avatar-img">
+        </div>
+        <div class="about-text reveal">
+          <p>I'm a Computer Science undergraduate at <strong>Harcourt Butler Technical University, Kanpur</strong>
+            (2023–2027), currently maintaining a CGPA of 8.2/10. My interest sits at the intersection of building things
+            people actually use and solving problems that make me a sharper engineer.</p>
+          <p>On the development side, I work across HTML, CSS, JavaScript and Python, building responsive front-end
+            applications and gradually rounding out into full-stack territory. On the problem-solving side, I spend
+            consistent time on data structures and algorithms — currently past <strong>350 problems solved on
+              LeetCode</strong> and rated <strong>2★ on CodeChef</strong>.</p>
+          <p>Outside of coursework, I lead design decisions as <strong>Design Domain Head at HBTU's AutoRob
+              Club</strong>, and I've picked up real-world experience through a full-stack internship at CodSoft and a
+            web development &amp; content writing internship at InAmigos Foundation.</p>
+          <div class="quick-facts">
+            <div class="fact">
+              <div class="label">Location</div>
+              <div class="value">Kanpur, India</div>
+            </div>
+            <div class="fact">
+              <div class="label">Education</div>
+              <div class="value">B.Tech CSE, HBTU</div>
+            </div>
+            <div class="fact">
+              <div class="label">Focus</div>
+              <div class="value">Full-Stack &amp; DSA</div>
+            </div>
+            <div class="fact">
+              <div class="label">Status</div>
+              <div class="value">Open to Internships</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-strip reveal">
+        <div class="stat-cell">
+          <div class="num">1000+</div>
+          <div class="lbl">DSA Problems Solved</div>
+        </div>
+        <div class="stat-cell">
+          <div class="num">3★</div>
+          <div class="lbl">CodeChef Rating</div>
+        </div>
+        <div class="stat-cell">
+          <div class="num">8.2</div>
+          <div class="lbl">CGPA / 10</div>
+        </div>
+        <div class="stat-cell">
+          <div class="num">5+</div>
+          <div class="lbl">Projects Built</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-tag">02 / Skills</div>
+      <h2 class="section-title reveal">The stack I reach for <span>most often.</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3><span class="idx">01</span> Languages</h3>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span
+              class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="idx">02</span> Web Development</h3>
+          <div class="tag-row">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span
+              class="tag">Responsive Design</span><span class="tag">Firebase</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="idx">03</span> Core CS &amp; Problem Solving</h3>
+          <div class="tag-row">
+            <span class="tag">Data Structures</span><span class="tag">Algorithms</span><span class="tag">Competitive
+              Programming</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="idx">04</span> Tools &amp; Platforms</h3>
+          <div class="tag-row">
+            <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span
+              class="tag">OpenCV</span><span class="tag">NumPy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-tag">03 / Experience</div>
+      <h2 class="section-title reveal">Where I've put the skills <span>to work.</span></h2>
+      <div class="timeline">
+
+        <div class="tl-item reveal">
+          <div class="tl-head">
+            <div class="tl-role">Full Stack Development Intern | <a href="">Certificate </a></div>
+            <div class="tl-date">Jun 2025 – Jul 2025</div>
+          </div>
+          <div class="tl-org">CodSoft</div>
+          <ul class="tl-list">
+            <li>Developed responsive web pages using HTML, CSS, and JavaScript</li>
+            <li>Built reusable frontend components and improved UI responsiveness</li>
+            <li>Used Git for version control and collaboration</li>
+          </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-head">
+            <div class="tl-role">Web Development &amp; Content Writing Intern</div>
+            <div class="tl-date">Jun 2026 – Jul 2026</div>
+          </div>
+          <div class="tl-org">InAmigos Foundation</div>
+          <ul class="tl-list">
+            <li>Built and improved web pages to support the foundation's awareness campaigns</li>
+            <li>Wrote human-toned articles on animal welfare, volunteer recruitment, and CSR partnerships</li>
+            <li>Prepared a website improvement analysis with annotated screenshots for the team</li>
+          </ul>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-head">
+            <div class="tl-role">Design Domain Head</div>
+            <div class="tl-date">2023 – Present</div>
+          </div>
+          <div class="tl-org">AutoRob Club, HBTU</div>
+          <ul class="tl-list">
+            <li>Participated in robotics and automation workshops and mentoring sessions</li>
+            <li>Grew from workshop volunteer to leading the club's design domain</li>
+          </ul>
+          <div class="club-progress">
+            <span class="club-step">Workshop Volunteer</span>
+            <span class="club-step">Club Member</span>
+            <span class="club-step current">Design Domain Head</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-tag">04 / Projects</div>
+      <h2 class="section-title reveal">Things I've shipped <span>for fun and practice.</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Spidy-Sudhir" target="_blank" rel="noopener" aria-label="Source code"><svg
+                  width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.71 1.25 3.37.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.09 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg></a>
+            </div>
+          </div>
+          <h3>Multiplayer Tic Tac Toe</h3>
+          <p>Real-time multiplayer Tic Tac Toe with room-based gameplay. Uses Firebase Realtime Database to sync game
+            state live between players, with full win-detection logic and a clean, responsive UI.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="9" cy="9" r="2" />
+                <path d="M21 15l-4.5-4.5L9 18" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Spidy-Sudhir" target="_blank" rel="noopener" aria-label="Source code"><svg
+                  width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.71 1.25 3.37.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.09 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg></a>
+            </div>
+          </div>
+          <h3>Memory Matching Game</h3>
+          <p>A space/sci-fi themed memory matching game with multiple difficulty levels and a side-panel stats tracker
+            for moves, time, and matches — built as a portfolio piece focused on interaction detail.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                <path d="M2 2l7.586 7.586" />
+                <circle cx="11" cy="11" r="2" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Spidy-Sudhir" target="_blank" rel="noopener" aria-label="Source code"><svg
+                  width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.71 1.25 3.37.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.09 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg></a>
+            </div>
+          </div>
+          <h3>Air Canvas</h3>
+          <p>A gesture-based virtual drawing application. Tracks hand movement through color detection with OpenCV to
+            let you draw in real time, with multiple tools and color selection — no mouse required.</p>
+          <div class="project-tags"><span>Python</span><span>OpenCV</span><span>NumPy</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 8h20" />
+                <path d="M8 4v4" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Spidy-Sudhir" target="_blank" rel="noopener" aria-label="Source code"><svg
+                  width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.71 1.25 3.37.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.09 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg></a>
+            </div>
+          </div>
+          <h3>Netflix Clone</h3>
+          <p>A front-end clone of Netflix's browsing experience — replicating the layout, banner, and horizontally
+            scrollable content rows with a fully responsive design.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Spidy-Sudhir" target="_blank" rel="noopener" aria-label="Source code"><svg
+                  width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-1.94c-3.2.7-3.87-1.54-3.87-1.54-.53-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.71 1.25 3.37.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.09 0 4.41-2.7 5.39-5.26 5.67.41.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                </svg></a>
+            </div>
+          </div>
+          <h3>Amazon Clone</h3>
+          <p>A front-end clone of Amazon's storefront — product listings, cart-style layout, and category navigation,
+            built to practice structuring a larger multi-section responsive UI.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-tag">05 / Education</div>
+      <h2 class="section-title reveal">Academic <span>background.</span></h2>
+      <div class="edu-list">
+        <div class="edu-item reveal">
+          <div>
+            <div class="school">Harcourt Butler Technical University, Kanpur</div>
+            <div class="deg">B.Tech in Computer Science and Engineering</div>
+          </div>
+          <div class="score">8.2 CGPA<span class="yr">2023 – 2027</span></div>
+        </div>
+        <div class="edu-item reveal">
+          <div>
+            <div class="school">Renaissance Academy, Gorakhpur</div>
+            <div class="deg">Senior Secondary (CBSE)</div>
+          </div>
+          <div class="score">93.6%<span class="yr">2022</span></div>
+        </div>
+        <div class="edu-item reveal">
+          <div>
+            <div class="school">Renaissance Academy, Gorakhpur</div>
+            <div class="deg">Secondary (CBSE)</div>
+          </div>
+          <div class="score">94.8%<span class="yr">2020</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <h2>Let's build something.</h2>
+          <p>Open to internships, SDE roles, and interesting collaborations. Reach out — I reply fast.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M4 4h16v16H4z" opacity="0" />
+                  <path d="M22 6l-10 7L2 6" />
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                </svg></span>
+              sudhirgupta9july@gmail.com
+              <button class="copy-btn" data-copy="sudhirgupta9july@gmail.com">copy</button>
+            </div>
+            <div class="contact-method">
+              <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.79.6 2.65a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.43-1.27a2 2 0 0 1 2.11-.45c.86.28 1.75.48 2.65.6A2 2 0 0 1 22 16.92z" />
+                </svg></span>
+              +91 88406 05955
+              <button class="copy-btn" data-copy="+918840605955">copy</button>
+            </div>
+            <div class="contact-method">
+              <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg></span>
+              Kanpur, India
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <a href="mailto:sudhirgupta9july@gmail.com" class="btn btn-primary" style="justify-content:center;">Email
+            Me</a>
+          <a href="https://github.com/Spidy-Sudhir" target="_blank" rel="noopener" class="btn btn-ghost"
+            style="justify-content:center;">GitHub · Spidy-Sudhir</a>
+          <a href="https://linkedin.com/in/spidy-sudhir" target="_blank" rel="noopener" class="btn btn-ghost"
+            style="justify-content:center;">LinkedIn · spidy-sudhir</a>
+          <a href="https://leetcode.com/u/Spidy_/" target="_blank" rel="noopener" class="btn btn-ghost"
+            style="justify-content:center;">LeetCode · Spidy_</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Built by <span>Sudhir Kumar Gupta</span> · © 2026 · Designed &amp; coded with a lot of debugging
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
