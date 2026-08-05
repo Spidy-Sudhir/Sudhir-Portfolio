@@ -2,7 +2,7 @@
 
 My personal developer portfolio showcasing my projects, technical skills, coding achievements, and experience as a Computer Science student.
 
-🌐 **Live Demo:** https://sudhir-portfolio-zeta.vercel.app/
+🌐 **Live Demo:** https://sudhir-portfolio-zeta.vercel.app
 
 ## 🛠️ Tech Stack
 - HTML5
